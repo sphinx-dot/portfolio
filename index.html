@@ -122,15 +122,22 @@
                 <img src="" alt=""> <!-- TODO prendre image  et la foutre ici -->
                 <h4>Réseau</h4>
                 <ul>
-                    <li>Language : PHP/SQL/</li>
-                    <li>Description : </li>
+                    <li>Language : PHP / SQL / Bash</li>
+                    <li>Description : En groupes de 3 ou 4 étudiants nous avons dû configurer un serveur Apache servant à héberger un site localement.</li>
                 </ul>
             </article>
         </section>
-
     </main>
-    <body>
+    <footer>
         
-    </body>
+    </footer>
+    <script>
+        window.addEventListener("load", () => {
+            if (window.location.hash) {
+            // Retire l'ancre de l'URL sans recharger la page
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+            }
+        });
+    </script>
 </body>
 </html>
